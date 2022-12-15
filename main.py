@@ -1,49 +1,52 @@
 #Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları#
 print("Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları")
 print("Dikdörtgen Alan ve Çevre Hesaplaması")
-kisa=input("Kısa Kenarı Girin : ")
-uzun=input("Uzun Kenarı Girin : ")
-alan=int(kisa)*int(uzun)
-cevre=2*int(kisa)+2*int(uzun)
+kisa=int(input("Kısa Kenarı Girin : "))
+uzun=int(input("Uzun Kenarı Girin : "))
+alan=kisa*uzun
+cevre=2*kisa+2*uzun
 print("Dikdörtgenin Alanı : ",alan)
 print("Dikdörtgenin Çevresi : ",cevre)
 print("Kare Alan ve Çevre Hesaplaması")
-kenar=input("Kenarı Girin : ")
-alan=int(kenar)*int(kenar)
-cevre=4*int(kenar)
+kenar=int(input("Kenarı Girin : "))
+alan=kenar*kenar
+cevre=4*kenar
 print("Karenin Alanı : ",alan)
 print("Karenin Çevresi : ",cevre)
 print("Üçgen Alan ve Çevre Hesaplaması")
-kenar=input("Kenarı Girin : ")
-h=input("Yükseklik Girin : ")
-alan=int(kenar)*int(h)/2
-cevre=int(kenar)*3
+kenar=int(input("Kenarı Girin : "))
+h=int(input("Yükseklik Girin : "))
+alan=(kenar*h)/2
+cevre=kenar*3
 print("Üçgenin Alanı : ",alan)
 print("Üçgenin Çevresi : ",cevre)
 
 #4 İşlem Hesaplamaları#
-print("4 İşlem Hesaplamaları")
-print("Toplama İşlemi")
-a=input("1. Sayıyı Girin : ")
-b=input("2. Sayıyı Girin : ")
-sonuc=int(a)+int(b)
-print("Sonuç : ",sonuc)
-print("Çıkarma İşlemi")
-a=input("1. Sayıyı Girin : ")
-b=input("2. Sayıyı Girin : ")
-sonuc=int(a)-int(b)
-print("Sonuç : ",sonuc)
-print("Çarpma İşlemi")
-a=input("1. Sayıyı Girin : ")
-b=input("2. Sayıyı Girin : ")
-sonuc=int(a)*int(b)
-print("Sonuç : ",sonuc)
-print("Bölme İşlemi")
-a=input("1. Sayıyı Girin : ")
-b=input("2. Sayıyı Girin : ")
-sonuc=int(a)/int(b)
-print("Sonuç : ",sonuc)
-
+def toplama(a, b):
+    return a+b
+def cikarma(a, b):
+    return a-b
+def carpma(a, b):
+    return a*b
+def bolme(a, b):
+    return a/b
+print("Yapacağınız İşlemi Seçiniz. \n",
+        "1. Toplama \n",
+        "2. Çıkarma \n",
+        "3. Çarpma \n",
+        "4. Bölme"
+)
+secim=int(input("Şeçtiğiniz işlemi 1, 2, 3, 4 olacak şekilde giriniz : "))
+a=int(input("1. Sayıyı Girin : "))
+b=int(input("2. Sayıyı Girin : "))
+if secim ==1:
+    print(a, "+", b, "=", toplama(a, b))
+if secim ==2:
+    print(a, "-", b, "=", cikarma(a, b))
+if secim ==3:
+    print(a, "*", b, "=", carpma(a, b))
+if secim ==4:
+    print(a, "/", b, "=", bolme(a, b))
 #Değişken Olarak İsim Yazma#
 print("Değişken Olarak İsim Yazma")
 ad=input("Adınızı Girin : ")
@@ -54,15 +57,15 @@ okulno=input("Okul Numaranızı Girin : ")
 telno=input("Telefon Numaranızı Girin (Zorunlu Değil) : ")
 print("Ad : ",ad,"Soyad : ",soyad,"Kimlik : ",kimlik,"Sınıf : ",sinif,"Okul Numarası : ",okulno,"Telefon Numarası : ",telno)
 
-okul_turu="meslek lisesi"
+okul_turu="Lise"
 print(type(okul_turu))
 
-a="Merhaba"
-b="Canimmm"
+a="Taylan"
+b="GzLn"
 c=a+b
 print(c)
 
-print("TR"*5)
+print("TaylanGzLn"*5)
 
 a="Python"
 b=a*10
