@@ -1,5 +1,7 @@
 #Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları#
 print("Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları")
+
+#Dikdörtgen Alan ve Çevre Hesaplaması#
 print("Dikdörtgen Alan ve Çevre Hesaplaması")
 kisa=int(input("Kısa Kenarı Girin : "))
 uzun=int(input("Uzun Kenarı Girin : "))
@@ -7,12 +9,16 @@ alan=kisa*uzun
 cevre=2*kisa+2*uzun
 print("Dikdörtgenin Alanı : ",alan)
 print("Dikdörtgenin Çevresi : ",cevre)
+
+#Kare Alan ve Çevre Hesaplaması#
 print("Kare Alan ve Çevre Hesaplaması")
 kenar=int(input("Kenarı Girin : "))
 alan=kenar*kenar
 cevre=4*kenar
 print("Karenin Alanı : ",alan)
 print("Karenin Çevresi : ",cevre)
+
+#Üçgen Alan ve Çevre Hesaplaması#
 print("Üçgen Alan ve Çevre Hesaplaması")
 kenar=int(input("Kenarı Girin : "))
 h=int(input("Yükseklik Girin : "))
@@ -22,6 +28,7 @@ print("Üçgenin Alanı : ",alan)
 print("Üçgenin Çevresi : ",cevre)
 
 #4 İşlem Hesaplamaları#
+print("4 İşlem Hesaplamaları")
 def toplama(a, b):
     return a+b
 def cikarma(a, b):
@@ -47,6 +54,15 @@ if secim ==3:
     print(a, "*", b, "=", carpma(a, b))
 if secim ==4:
     print(a, "/", b, "=", bolme(a, b))
+
+#Yaş Hesaplaması#
+print("Yaş Hesaplaması")
+ad=input("Adınızı Girin : ")
+dogum=int(input("Doğum Yıl Tarihinizi Girin : "))
+guncel=int(input("Güncel Yılı Giriniz : "))
+yas=guncel-dogum
+print("Merhaba",ad,"yaşınız",yas,"'dır")
+
 #Değişken Olarak İsim Yazma#
 print("Değişken Olarak İsim Yazma")
 ad=input("Adınızı Girin : ")
@@ -57,22 +73,38 @@ okulno=input("Okul Numaranızı Girin : ")
 telno=input("Telefon Numaranızı Girin (Zorunlu Değil) : ")
 print("Ad : ",ad,"Soyad : ",soyad,"Kimlik : ",kimlik,"Sınıf : ",sinif,"Okul Numarası : ",okulno,"Telefon Numarası : ",telno)
 
-okul_turu="Lise"
-print(type(okul_turu))
+#Diğer Kodlamalar#
+print("Diğer Kodlamalar")
 
-a="Taylan"
-b="GzLn"
+okul="Lise"
+print(type(okul))
+
+#Değişken Olarak Metin Yazma#
+print("Değişken Olarak Metin Yazma Komudu")
+a="Hello"
+b="World!"
 c=a+b
 print(c)
 
-print("TaylanGzLn"*5)
+#Metni Tekrarlama#
+print("Metni Tekrarlama Komudu")
+print("Hello World!"*5)
 
-a="Python"
+#Değişken Olarak Metin Tekrarlama#
+print("Değişken Olarak Metin Tekrarlama Komudu")
+a="Hello World!"
 b=a*10
 print(b)
 
+#Değişken Olarak Metin Yazma Ve Tekrarlama#
+print("Değişken Olarak Metin Yazma Ve Tekrarlama Komudu")
 a="Hello World!"
 bosluk=" "
 b=a+bosluk
 c=b*3
 print(c)
+
+#Mesajı Tekrarlama#
+print("Mesajı Tekrarlama Komudu")
+for i in range(5):
+  print("Hello World!")
