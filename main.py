@@ -1,5 +1,5 @@
-#Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları#
-print("Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları")
+#Diktörgen, Kare, Üçgen ve Daire Alan ve Çevre Hesaplamaları#
+print("Diktörgen, Kare, Üçgen ve Daire Alan ve Çevre Hesaplamaları")
 
 #Dikdörtgen Alan ve Çevre Hesaplaması#
 print("Dikdörtgen Alan ve Çevre Hesaplaması")
@@ -26,6 +26,14 @@ alan=(kenar*h)/2
 cevre=kenar*3
 print("Üçgenin Alanı : ",alan)
 print("Üçgenin Çevresi : ",cevre)
+
+#Dairenin Yarıçapı İle Alan ve Çevre Hesaplaması#
+print("Dairenin Yarıçapı İle Alan ve Çevre Hesaplaması")
+r=float(input("Yarı Çapı Girin : "))
+alan=3.14*r*r
+cevre=2*3.14*r
+print("Dairenin Alanı : ",alan)
+print("Dairenin Çevresi : ",cevre)
 
 #4 İşlem Hesaplamaları#
 print("4 İşlem Hesaplamaları")
@@ -108,3 +116,32 @@ print(c)
 print("Mesajı Tekrarlama Komudu")
 for i in range(5):
   print("Hello World!")
+
+#Listeleme Yöntemi#
+print("Listeleme Yöntemi")
+
+ilk_liste=["Ankara", 312, 0.6]
+print(ilk_liste)
+
+asal_sayilar=[2, 3, 5, 7, 11, 13, 17, 19, 23]
+print(asal_sayilar[0:6:2])
+
+tek_sayilar=[3, 5, 7, 9, 11, 13, 15, 17, 19]
+print(tek_sayilar[0:6])
+print(tek_sayilar[2:5])
+print(tek_sayilar[3:8])
+print(tek_sayilar[:5])
+print(tek_sayilar[3:])
+print(tek_sayilar[0:8:2])
+print(tek_sayilar[::3])
+
+sehirler=["Ankara", "Bursa", "Çanakkale", "Denizli", "Eskişehir"]
+print(sehirler[2])
+
+sehirler=["Ankara", "Bursa", "Çanakkale", "Denizli", "Eskişehir"]
+print(sehirler[-2])
+
+ders=['K','O','D','L','A','M','A']
+print(ders[0])
+print(ders[2])
+print(ders[5])

@@ -1,5 +1,5 @@
-#Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları#
-print("Diktörgen, Kare ve Üçgen Alan ve Çevre Hesaplamaları")
+#Diktörgen, Kare, Üçgen ve Daire Alan ve Çevre Hesaplamaları#
+print("Diktörgen, Kare, Üçgen ve Daire Alan ve Çevre Hesaplamaları")
 
 #Dikdörtgen Alan ve Çevre Hesaplaması#
 print("Dikdörtgen Alan ve Çevre Hesaplaması")
@@ -26,3 +26,11 @@ alan=(kenar*h)/2
 cevre=kenar*3
 print("Üçgenin Alanı : ",alan)
 print("Üçgenin Çevresi : ",cevre)
+
+#Dairenin Yarıçapı İle Alan ve Çevre Hesaplaması#
+print("Dairenin Yarıçapı İle Alan ve Çevre Hesaplaması")
+r=float(input("Yarı Çapı Girin : "))
+alan=3.14*r*r
+cevre=2*3.14*r
+print("Dairenin Alanı : ",alan)
+print("Dairenin Çevresi : ",cevre)
